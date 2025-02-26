@@ -23,7 +23,7 @@ const PostList = () => {
         <option value="2">User 2</option>
         <option value="3">User 3</option>
       </select> */}
-      <h2 className="mb-4 text-center">ToDos</h2>
+      <h2 className="mb-4 text-center">Posts</h2>
 
       <ul className="list-group">
         {posts?.pages.map((page) => (
