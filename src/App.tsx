@@ -1,12 +1,14 @@
 // import TodoList from "./components/TodoList";
 
-import PostList from "./components/PostList";
+import TodoFormForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div className="mx-4 mt-4">
+    <div className="mt-4 w-50 mx-auto">
+      <TodoFormForm />
       {/* <TodoList /> */}
-      <PostList />
+      <TodoList />
     </div>
   );
 }

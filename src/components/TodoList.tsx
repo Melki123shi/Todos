@@ -10,7 +10,7 @@ const TodoList = () => {
   return (
     <>
       <h2 className="mb-4 text-center">ToDos</h2>
-      <ul className="list-group w-50 mx-auto">
+      <ul className="list-group">
         {todos?.map((todo) => (
           <li className="list-group-item p-2" key={todo.userId}> {todo.title} </li>
         ))}
