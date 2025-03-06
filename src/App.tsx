@@ -1,15 +1,16 @@
-// import TodoList from "./components/TodoList";
-
-import TodoFormForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
+import NavBar from "./state-managment/NavBar";
+import Home from "./state-managment/Home";
+import AuthProvider from "./state-managment/auth/AuthProvider";
+import TaskProvider from "./state-managment/task/TaskProvider";
 
 function App() {
   return (
-    <div className="mt-4 w-50 mx-auto">
-      <TodoFormForm />
-      {/* <TodoList /> */}
-      <TodoList />
-    </div>
+    <AuthProvider>
+      <TaskProvider>
+        <NavBar />
+        <Home />
+      </TaskProvider>
+    </AuthProvider>
   );
 }
 
